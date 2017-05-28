@@ -15642,3 +15642,4 @@ AttributeError: 'module' object has no attribute ''
 [E 20:47:13.694 NotebookApp] 500 GET /nbconvert/pdf/p.ipynb?download=true (127.0.0.1) 1215.30ms referer=http://localhost:8888/notebooks/p.ipynb
 [I 20:48:47.941 NotebookApp] Saving file at /p.ipynb
 [I 20:50:13.605 NotebookApp] Saving file at /p.ipynb
+[I 20:53:59.190 NotebookApp] Saving file at /p.ipynb
