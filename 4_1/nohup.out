@@ -12677,3 +12677,1339 @@
 [W 20:59:31.425 NotebookApp] bibtex had problems, most likely because there were no citations
 [I 20:59:31.426 NotebookApp] PDF successfully created
 [I 20:59:59.341 NotebookApp] Saving file at /p.ipynb
+[C 21:02:47.864 NotebookApp] received signal 15, stopping
+[I 21:02:47.864 NotebookApp] Shutting down kernels
+[I 21:02:47.965 NotebookApp] Kernel shutdown: 5fbfb308-ba20-457c-9368-6c8bb07236ae
+[I 11:55:24.177 NotebookApp] [nb_conda_kernels] enabled, 3 kernels found
+[I 11:55:24.556 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 11:55:25.352 NotebookApp] [nb_anacondacloud] enabled
+[I 11:55:25.355 NotebookApp] [nb_conda] enabled
+[I 11:55:25.388 NotebookApp] ✓ nbpresent HTML export ENABLED
+[I 11:55:25.388 NotebookApp] ✓ nbpresent PDF export ENABLED
+[I 11:55:25.391 NotebookApp] Serving notebooks from local directory: /home/yolki/Escritorio/ai/md/4_1
+[I 11:55:25.391 NotebookApp] 0 active kernels 
+[I 11:55:25.391 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=81a2e3a7f08a1a3bb6342452430087887cad2ee36e284124
+[I 11:55:25.391 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:55:25.392 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=81a2e3a7f08a1a3bb6342452430087887cad2ee36e284124
+[I 11:55:25.866 NotebookApp] Accepting one-time-token-authenticated connection from 127.0.0.1
+Se ha abierto una nueva ventana en la sesión actual del navegador.
+[I 11:55:33.139 NotebookApp] Kernel started: fcbe54ea-0443-4991-947c-adda20de0a16
+[I 11:55:33.144 NotebookApp] 302 GET /notebooks/Hypothesis_Testing.jpg (127.0.0.1) 1.64ms
+[I 11:55:33.145 NotebookApp] 302 GET /notebooks/student_t_pdf.png (127.0.0.1) 1.30ms
+[I 11:55:33.181 NotebookApp] 302 GET /notebooks/stat_83.png (127.0.0.1) 1.20ms
+[W 11:55:33.486 NotebookApp] 404 GET /static/components/MathJax/jax/element/mml/optable/Latin1Supplement.js?rev=2.6.0 (127.0.0.1) 144.34ms referer=http://localhost:8888/notebooks/p.ipynb
+[I 11:57:32.937 NotebookApp] Saving file at /p.ipynb
+[I 12:05:32.948 NotebookApp] Saving file at /p.ipynb
+[I 12:07:32.926 NotebookApp] Saving file at /p.ipynb
+[I 12:19:32.925 NotebookApp] Saving file at /p.ipynb
+[I 12:21:32.924 NotebookApp] Saving file at /p.ipynb
+[I 12:25:32.925 NotebookApp] Saving file at /p.ipynb
+[I 12:31:32.929 NotebookApp] Saving file at /p.ipynb
+[I 12:33:32.930 NotebookApp] Saving file at /p.ipynb
+[I 12:35:32.930 NotebookApp] Saving file at /p.ipynb
+[I 12:37:32.931 NotebookApp] Saving file at /p.ipynb
+[I 12:39:33.200 NotebookApp] Saving file at /p.ipynb
+[I 12:41:32.914 NotebookApp] Saving file at /p.ipynb
+[I 12:43:32.925 NotebookApp] Saving file at /p.ipynb
+[I 12:45:32.930 NotebookApp] Saving file at /p.ipynb
+[I 12:47:32.926 NotebookApp] Saving file at /p.ipynb
+[I 12:49:32.927 NotebookApp] Saving file at /p.ipynb
+[I 12:51:32.925 NotebookApp] Saving file at /p.ipynb
+[I 12:53:32.928 NotebookApp] Saving file at /p.ipynb
+[I 12:55:32.932 NotebookApp] Saving file at /p.ipynb
+[I 12:57:32.922 NotebookApp] Saving file at /p.ipynb
+[I 12:59:32.927 NotebookApp] Saving file at /p.ipynb
+[I 13:01:32.915 NotebookApp] Saving file at /p.ipynb
+[I 13:03:32.916 NotebookApp] Saving file at /p.ipynb
+[I 13:05:32.931 NotebookApp] Saving file at /p.ipynb
+[I 13:07:32.926 NotebookApp] Saving file at /p.ipynb
+[I 13:09:32.929 NotebookApp] Saving file at /p.ipynb
+[I 13:11:32.922 NotebookApp] Saving file at /p.ipynb
+[I 13:13:32.930 NotebookApp] Saving file at /p.ipynb
+[I 13:15:32.928 NotebookApp] Saving file at /p.ipynb
+[I 13:23:32.928 NotebookApp] Saving file at /p.ipynb
+[I 13:25:32.925 NotebookApp] Saving file at /p.ipynb
+[I 13:27:32.939 NotebookApp] Saving file at /p.ipynb
+[I 13:29:32.933 NotebookApp] Saving file at /p.ipynb
+[I 13:31:32.929 NotebookApp] Saving file at /p.ipynb
+[I 13:33:32.929 NotebookApp] Saving file at /p.ipynb
+[I 13:35:32.912 NotebookApp] Saving file at /p.ipynb
+[I 13:37:32.921 NotebookApp] Saving file at /p.ipynb
+[I 13:39:32.933 NotebookApp] Saving file at /p.ipynb
+[I 13:43:32.934 NotebookApp] Saving file at /p.ipynb
+[I 13:45:32.925 NotebookApp] Saving file at /p.ipynb
+[I 13:59:32.941 NotebookApp] Saving file at /p.ipynb
+[I 14:01:32.914 NotebookApp] Saving file at /p.ipynb
+[I 14:03:32.913 NotebookApp] Saving file at /p.ipynb
+[I 14:05:32.922 NotebookApp] Saving file at /p.ipynb
+[I 14:07:32.936 NotebookApp] Saving file at /p.ipynb
+[I 14:09:32.922 NotebookApp] Saving file at /p.ipynb
+[I 14:11:32.925 NotebookApp] Saving file at /p.ipynb
+[I 14:13:17.181 NotebookApp] Saving file at /p.ipynb
+[I 14:15:32.931 NotebookApp] Saving file at /p.ipynb
+[I 14:21:32.916 NotebookApp] Saving file at /p.ipynb
+[I 14:23:32.930 NotebookApp] Saving file at /p.ipynb
+[I 14:25:32.918 NotebookApp] Saving file at /p.ipynb
+[I 14:27:14.625 NotebookApp] Saving file at /p.ipynb
+[I 14:27:21.877 NotebookApp] Writing 50574 bytes to notebook.tex
+[I 14:27:21.878 NotebookApp] Building PDF
+[I 14:27:21.878 NotebookApp] Running pdflatex 3 times: [u'pdflatex', u'notebook.tex']
+[I 14:27:27.398 NotebookApp] Running bibtex 1 time: [u'bibtex', u'notebook']
+[W 14:27:27.486 NotebookApp] bibtex had problems, most likely because there were no citations
+[I 14:27:27.486 NotebookApp] PDF successfully created
+[I 14:29:32.922 NotebookApp] Saving file at /p.ipynb
+[I 14:31:32.933 NotebookApp] Saving file at /p.ipynb
+[I 14:33:32.934 NotebookApp] Saving file at /p.ipynb
+[I 14:35:32.930 NotebookApp] Saving file at /p.ipynb
+[I 14:37:32.931 NotebookApp] Saving file at /p.ipynb
+[I 14:39:32.931 NotebookApp] Saving file at /p.ipynb
+[I 14:41:32.914 NotebookApp] Saving file at /p.ipynb
+[I 14:43:32.933 NotebookApp] Saving file at /p.ipynb
+[I 14:45:32.929 NotebookApp] Saving file at /p.ipynb
+[I 14:47:32.918 NotebookApp] Saving file at /p.ipynb
+[I 14:49:32.925 NotebookApp] Saving file at /p.ipynb
+[I 14:51:32.914 NotebookApp] Saving file at /p.ipynb
+[I 15:13:32.943 NotebookApp] Saving file at /p.ipynb
+[I 15:15:32.949 NotebookApp] Saving file at /p.ipynb
+[I 15:21:32.923 NotebookApp] Saving file at /p.ipynb
+[I 15:23:32.930 NotebookApp] Saving file at /p.ipynb
+[I 15:26:42.164 NotebookApp] Saving file at /p.ipynb
+[I 15:27:32.922 NotebookApp] Saving file at /p.ipynb
+[I 15:29:32.933 NotebookApp] Saving file at /p.ipynb
+[I 15:31:32.931 NotebookApp] Saving file at /p.ipynb
+[I 15:33:32.932 NotebookApp] Saving file at /p.ipynb
+[I 15:35:32.940 NotebookApp] Saving file at /p.ipynb
+[I 15:37:32.931 NotebookApp] Saving file at /p.ipynb
+[I 15:39:32.932 NotebookApp] Saving file at /p.ipynb
+[I 15:41:32.932 NotebookApp] Saving file at /p.ipynb
+[I 15:43:32.931 NotebookApp] Saving file at /p.ipynb
+[I 15:45:32.942 NotebookApp] Saving file at /p.ipynb
+[I 15:47:32.931 NotebookApp] Saving file at /p.ipynb
+[I 15:49:32.935 NotebookApp] Saving file at /p.ipynb
+[I 15:51:32.925 NotebookApp] Saving file at /p.ipynb
+[I 15:52:04.886 NotebookApp] Saving file at /p.ipynb
+[I 15:53:32.926 NotebookApp] Saving file at /p.ipynb
+[I 15:55:32.924 NotebookApp] Saving file at /p.ipynb
+[I 15:57:32.937 NotebookApp] Saving file at /p.ipynb
+[I 15:59:32.933 NotebookApp] Saving file at /p.ipynb
+[I 16:01:32.931 NotebookApp] Saving file at /p.ipynb
+[I 16:03:32.915 NotebookApp] Saving file at /p.ipynb
+[I 16:05:32.930 NotebookApp] Saving file at /p.ipynb
+[I 16:07:32.927 NotebookApp] Saving file at /p.ipynb
+[I 16:09:32.929 NotebookApp] Saving file at /p.ipynb
+[I 16:11:32.931 NotebookApp] Saving file at /p.ipynb
+[I 16:13:32.931 NotebookApp] Saving file at /p.ipynb
+[I 16:15:32.926 NotebookApp] Saving file at /p.ipynb
+[I 16:17:32.928 NotebookApp] Saving file at /p.ipynb
+[I 16:19:32.928 NotebookApp] Saving file at /p.ipynb
+[I 16:21:32.915 NotebookApp] Saving file at /p.ipynb
+[I 16:23:32.929 NotebookApp] Saving file at /p.ipynb
+[I 16:25:32.941 NotebookApp] Saving file at /p.ipynb
+[I 16:27:32.920 NotebookApp] Saving file at /p.ipynb
+[I 16:29:32.945 NotebookApp] Saving file at /p.ipynb
+[I 16:31:32.915 NotebookApp] Saving file at /p.ipynb
+[I 16:32:25.077 NotebookApp] Saving file at /p.ipynb
+[I 16:33:11.854 NotebookApp] Saving file at /p.ipynb
+[I 16:35:01.959 NotebookApp] Saving file at /p.ipynb
+[I 16:37:20.830 NotebookApp] Saving file at /p.ipynb
+[I 16:37:25.247 NotebookApp] Writing 55508 bytes to notebook.tex
+[I 16:37:25.247 NotebookApp] Building PDF
+[I 16:37:25.248 NotebookApp] Running pdflatex 3 times: [u'pdflatex', u'notebook.tex']
+[C 16:37:25.626 NotebookApp] pdflatex failed: [u'pdflatex', u'notebook.tex']
+    This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex)
+     restricted \write18 enabled.
+    entering extended mode
+    (./notebook.tex
+    LaTeX2e <2016/03/31>
+    Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+    Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+    (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/palatino.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+    For additional information on amsmath, use the `?' option.
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+    Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+    <2008/02/07> (tvz))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+    
+    Package hyperref Message: Driver (autodetected): hpdftex.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def)))
+    (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+    f)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+    ric.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+    e.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+    thmetics.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+    code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+    s.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+    ex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+    tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+    ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+    .sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+    .sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+    zlibrarytopaths.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf))
+    No file notebook.aux.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd)
+    (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+    [Loading MPS to PDF converter (version 2006.09.02).]
+    ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
+    *geometry* driver: auto-detecting
+    *geometry* detected driver: pdftex
+    *geometry* verbose mode - [ preamble ] result:
+    * driver: pdftex
+    * paper: <default>
+    * layout: <same size as paper>
+    * layoutoffset:(h,v)=(0.0pt,0.0pt)
+    * modes: 
+    * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+    * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+    * \paperwidth=614.295pt
+    * \paperheight=794.96999pt
+    * \textwidth=469.75502pt
+    * \textheight=650.43001pt
+    * \oddsidemargin=0.0pt
+    * \evensidemargin=0.0pt
+    * \topmargin=-37.0pt
+    * \headheight=12.0pt
+    * \headsep=25.0pt
+    * \topskip=11.0pt
+    * \footskip=30.0pt
+    * \marginparwidth=59.0pt
+    * \marginparsep=10.0pt
+    * \columnsep=10.0pt
+    * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+    * \hoffset=0.0pt
+    * \voffset=0.0pt
+    * \mag=1000
+    * \@twocolumnfalse
+    * \@twosidefalse
+    * \@mparswitchfalse
+    * \@reversemarginfalse
+    * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+    ABD: EveryShipout initializing macros
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+    
+    LaTeX Warning: No \author given.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd) [1{/var/lib/texmf/fo
+    nts/map/pdftex/updmap/pdftex.map}] [2]
+    <student_t_pdf.png, id=24, 326.21875pt x 260.975pt> <use student_t_pdf.png>
+    [3 </home/yolki/Escritorio/ai/md/4_1/student_t_pdf.png>]
+    <Hypothesis_Testing.jpg, id=32, 376.40625pt x 217.5628pt>
+    <use Hypothesis_Testing.jpg> [4]
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-3.def) [5 </home/yolki/Es
+    critorio/ai/md/4_1/Hypothesis_Testing.jpg>]
+    <stat_83.png, id=48, 660.4675pt x 190.7125pt> <use stat_83.png>
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def) [6 </home/yolki/E
+    scritorio/ai/md/4_1/stat_83.png>] [7] [8] [9]
+    
+    ! Package amsmath Error: \hat allowed only in math mode.
+    
+    See the amsmath package documentation for explanation.
+    Type  H <return>  for immediate help.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    ? 
+    ! Emergency stop.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    !  ==> Fatal error occurred, no output PDF file produced!
+    Transcript written on notebook.log.
+    
+[E 16:37:25.627 NotebookApp] nbconvert failed: PDF creating failed, captured latex output:
+    This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex)
+     restricted \write18 enabled.
+    entering extended mode
+    (./notebook.tex
+    LaTeX2e <2016/03/31>
+    Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+    Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+    (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/palatino.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+    For additional information on amsmath, use the `?' option.
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+    Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+    <2008/02/07> (tvz))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+    
+    Package hyperref Message: Driver (autodetected): hpdftex.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def)))
+    (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+    f)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+    ric.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+    e.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+    thmetics.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+    code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+    s.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+    ex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+    tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+    ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+    .sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+    .sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+    zlibrarytopaths.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf))
+    No file notebook.aux.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd)
+    (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+    [Loading MPS to PDF converter (version 2006.09.02).]
+    ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
+    *geometry* driver: auto-detecting
+    *geometry* detected driver: pdftex
+    *geometry* verbose mode - [ preamble ] result:
+    * driver: pdftex
+    * paper: <default>
+    * layout: <same size as paper>
+    * layoutoffset:(h,v)=(0.0pt,0.0pt)
+    * modes: 
+    * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+    * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+    * \paperwidth=614.295pt
+    * \paperheight=794.96999pt
+    * \textwidth=469.75502pt
+    * \textheight=650.43001pt
+    * \oddsidemargin=0.0pt
+    * \evensidemargin=0.0pt
+    * \topmargin=-37.0pt
+    * \headheight=12.0pt
+    * \headsep=25.0pt
+    * \topskip=11.0pt
+    * \footskip=30.0pt
+    * \marginparwidth=59.0pt
+    * \marginparsep=10.0pt
+    * \columnsep=10.0pt
+    * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+    * \hoffset=0.0pt
+    * \voffset=0.0pt
+    * \mag=1000
+    * \@twocolumnfalse
+    * \@twosidefalse
+    * \@mparswitchfalse
+    * \@reversemarginfalse
+    * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+    ABD: EveryShipout initializing macros
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+    
+    LaTeX Warning: No \author given.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd) [1{/var/lib/texmf/fo
+    nts/map/pdftex/updmap/pdftex.map}] [2]
+    <student_t_pdf.png, id=24, 326.21875pt x 260.975pt> <use student_t_pdf.png>
+    [3 </home/yolki/Escritorio/ai/md/4_1/student_t_pdf.png>]
+    <Hypothesis_Testing.jpg, id=32, 376.40625pt x 217.5628pt>
+    <use Hypothesis_Testing.jpg> [4]
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-3.def) [5 </home/yolki/Es
+    critorio/ai/md/4_1/Hypothesis_Testing.jpg>]
+    <stat_83.png, id=48, 660.4675pt x 190.7125pt> <use stat_83.png>
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def) [6 </home/yolki/E
+    scritorio/ai/md/4_1/stat_83.png>] [7] [8] [9]
+    
+    ! Package amsmath Error: \hat allowed only in math mode.
+    
+    See the amsmath package documentation for explanation.
+    Type  H <return>  for immediate help.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    ? 
+    ! Emergency stop.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    !  ==> Fatal error occurred, no output PDF file produced!
+    Transcript written on notebook.log.
+    Traceback (most recent call last):
+      File "/home/yolki/anaconda2/lib/python2.7/site-packages/notebook/nbconvert/handlers.py", line 104, in get
+        "config_dir": self.application.settings['config_dir'],
+      File "/home/yolki/anaconda2/lib/python2.7/site-packages/nbconvert/exporters/pdf.py", line 175, in from_notebook_node
+        raise LatexFailed('\n'.join(self._captured_output))
+    LatexFailed: PDF creating failed, captured latex output:
+    This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex)
+     restricted \write18 enabled.
+    entering extended mode
+    (./notebook.tex
+    LaTeX2e <2016/03/31>
+    Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+    Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+    (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/palatino.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+    For additional information on amsmath, use the `?' option.
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+    Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+    <2008/02/07> (tvz))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+    
+    Package hyperref Message: Driver (autodetected): hpdftex.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def)))
+    (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+    f)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+    ric.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+    e.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+    thmetics.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+    code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+    s.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+    ex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+    tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+    ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+    .sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+    .sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+    zlibrarytopaths.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf))
+    No file notebook.aux.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd)
+    (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+    [Loading MPS to PDF converter (version 2006.09.02).]
+    ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
+    *geometry* driver: auto-detecting
+    *geometry* detected driver: pdftex
+    *geometry* verbose mode - [ preamble ] result:
+    * driver: pdftex
+    * paper: <default>
+    * layout: <same size as paper>
+    * layoutoffset:(h,v)=(0.0pt,0.0pt)
+    * modes: 
+    * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+    * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+    * \paperwidth=614.295pt
+    * \paperheight=794.96999pt
+    * \textwidth=469.75502pt
+    * \textheight=650.43001pt
+    * \oddsidemargin=0.0pt
+    * \evensidemargin=0.0pt
+    * \topmargin=-37.0pt
+    * \headheight=12.0pt
+    * \headsep=25.0pt
+    * \topskip=11.0pt
+    * \footskip=30.0pt
+    * \marginparwidth=59.0pt
+    * \marginparsep=10.0pt
+    * \columnsep=10.0pt
+    * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+    * \hoffset=0.0pt
+    * \voffset=0.0pt
+    * \mag=1000
+    * \@twocolumnfalse
+    * \@twosidefalse
+    * \@mparswitchfalse
+    * \@reversemarginfalse
+    * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+    ABD: EveryShipout initializing macros
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+    
+    LaTeX Warning: No \author given.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd) [1{/var/lib/texmf/fo
+    nts/map/pdftex/updmap/pdftex.map}] [2]
+    <student_t_pdf.png, id=24, 326.21875pt x 260.975pt> <use student_t_pdf.png>
+    [3 </home/yolki/Escritorio/ai/md/4_1/student_t_pdf.png>]
+    <Hypothesis_Testing.jpg, id=32, 376.40625pt x 217.5628pt>
+    <use Hypothesis_Testing.jpg> [4]
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-3.def) [5 </home/yolki/Es
+    critorio/ai/md/4_1/Hypothesis_Testing.jpg>]
+    <stat_83.png, id=48, 660.4675pt x 190.7125pt> <use stat_83.png>
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def) [6 </home/yolki/E
+    scritorio/ai/md/4_1/stat_83.png>] [7] [8] [9]
+    
+    ! Package amsmath Error: \hat allowed only in math mode.
+    
+    See the amsmath package documentation for explanation.
+    Type  H <return>  for immediate help.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    ? 
+    ! Emergency stop.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    !  ==> Fatal error occurred, no output PDF file produced!
+    Transcript written on notebook.log.
+    
+[W 16:37:25.666 NotebookApp] 500 GET /nbconvert/pdf/p.ipynb?download=true (127.0.0.1): nbconvert failed: PDF creating failed, captured latex output:
+    This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex)
+     restricted \write18 enabled.
+    entering extended mode
+    (./notebook.tex
+    LaTeX2e <2016/03/31>
+    Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+    Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+    (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/palatino.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+    For additional information on amsmath, use the `?' option.
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+    (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+    Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+    <2008/02/07> (tvz))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+    (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+    
+    Package hyperref Message: Driver (autodetected): hpdftex.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+    (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+    (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def)))
+    (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty))
+    (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+    (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+    ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+    f)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+    ric.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+    e.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+    tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+    thmetics.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+    code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+    .tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+    s.code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+    ex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+    tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+    x)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+    ode.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+    tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+    ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+    .sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+    .sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+    
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+    .code.tex)
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+    )
+    (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+    zlibrarytopaths.code.tex)))
+    (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf))
+    No file notebook.aux.
+    (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd)
+    (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+    [Loading MPS to PDF converter (version 2006.09.02).]
+    ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+    (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty)
+    (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+    (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
+    *geometry* driver: auto-detecting
+    *geometry* detected driver: pdftex
+    *geometry* verbose mode - [ preamble ] result:
+    * driver: pdftex
+    * paper: <default>
+    * layout: <same size as paper>
+    * layoutoffset:(h,v)=(0.0pt,0.0pt)
+    * modes: 
+    * h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+    * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+    * \paperwidth=614.295pt
+    * \paperheight=794.96999pt
+    * \textwidth=469.75502pt
+    * \textheight=650.43001pt
+    * \oddsidemargin=0.0pt
+    * \evensidemargin=0.0pt
+    * \topmargin=-37.0pt
+    * \headheight=12.0pt
+    * \headsep=25.0pt
+    * \topskip=11.0pt
+    * \footskip=30.0pt
+    * \marginparwidth=59.0pt
+    * \marginparsep=10.0pt
+    * \columnsep=10.0pt
+    * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+    * \hoffset=0.0pt
+    * \voffset=0.0pt
+    * \mag=1000
+    * \@twocolumnfalse
+    * \@twosidefalse
+    * \@mparswitchfalse
+    * \@reversemarginfalse
+    * (1in=72.27pt=25.4mm, 1cm=28.453pt)
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+    (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+    ABD: EveryShipout initializing macros
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+    (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+    
+    LaTeX Warning: No \author given.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+    (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd) [1{/var/lib/texmf/fo
+    nts/map/pdftex/updmap/pdftex.map}] [2]
+    <student_t_pdf.png, id=24, 326.21875pt x 260.975pt> <use student_t_pdf.png>
+    [3 </home/yolki/Escritorio/ai/md/4_1/student_t_pdf.png>]
+    <Hypothesis_Testing.jpg, id=32, 376.40625pt x 217.5628pt>
+    <use Hypothesis_Testing.jpg> [4]
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-3.def) [5 </home/yolki/Es
+    critorio/ai/md/4_1/Hypothesis_Testing.jpg>]
+    <stat_83.png, id=48, 660.4675pt x 190.7125pt> <use stat_83.png>
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 706.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 710.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    
+    LaTeX Warning: Command \' invalid in math mode on input line 714.
+    
+    (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def) [6 </home/yolki/E
+    scritorio/ai/md/4_1/stat_83.png>] [7] [8] [9]
+    
+    ! Package amsmath Error: \hat allowed only in math mode.
+    
+    See the amsmath package documentation for explanation.
+    Type  H <return>  for immediate help.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    ? 
+    ! Emergency stop.
+     ...                                              
+                                                      
+    l.1047   \$\hat{\sigma}
+                            = \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (x_i - \hat{m})^2}
+    !  ==> Fatal error occurred, no output PDF file produced!
+    Transcript written on notebook.log.
+    
+[E 16:37:25.677 NotebookApp] {
+      "Accept-Language": "en-GB,en;q=0.8,es;q=0.6", 
+      "Accept-Encoding": "gzip, deflate, sdch, br", 
+      "Host": "localhost:8888", 
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", 
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36", 
+      "Connection": "keep-alive", 
+      "Referer": "http://localhost:8888/notebooks/p.ipynb", 
+      "Cookie": "_xsrf=2|1cf042f1|60cf4f17556f5a96c879e5f093f3bd2a|1493570740; username-localhost-8888=\"2|1:0|10:1495965325|23:username-localhost-8888|44:YzQzODgzODc4NmEwNGZhNjk4ZGI1MThjODJlNDc2NGQ=|6a6ee88ed67664860ba0ed98e350c2513dc0c6586b346ee9db0d0b563396a60e\"", 
+      "Upgrade-Insecure-Requests": "1"
+    }
+[E 16:37:25.678 NotebookApp] 500 GET /nbconvert/pdf/p.ipynb?download=true (127.0.0.1) 901.35ms referer=http://localhost:8888/notebooks/p.ipynb
+[I 16:39:33.827 NotebookApp] Saving file at /p.ipynb
+[I 16:40:55.482 NotebookApp] Saving file at /p.ipynb
+[I 16:41:00.926 NotebookApp] Writing 55022 bytes to notebook.tex
+[I 16:41:00.926 NotebookApp] Building PDF
+[I 16:41:00.927 NotebookApp] Running pdflatex 3 times: [u'pdflatex', u'notebook.tex']
+[I 16:41:02.375 NotebookApp] Running bibtex 1 time: [u'bibtex', u'notebook']
+[W 16:41:02.395 NotebookApp] bibtex had problems, most likely because there were no citations
+[I 16:41:02.395 NotebookApp] PDF successfully created
+[I 16:41:11.439 NotebookApp] Saving file at /p.ipynb
+[I 16:42:12.165 NotebookApp] Saving file at /p.ipynb
+[I 16:43:32.924 NotebookApp] Saving file at /p.ipynb
+[I 16:45:32.930 NotebookApp] Saving file at /p.ipynb
+[I 16:47:32.919 NotebookApp] Saving file at /p.ipynb
+[I 16:49:32.933 NotebookApp] Saving file at /p.ipynb
+[I 16:53:32.921 NotebookApp] Saving file at /p.ipynb
+[I 16:55:32.921 NotebookApp] Saving file at /p.ipynb
+[I 16:57:32.964 NotebookApp] Saving file at /p.ipynb
+[I 16:59:32.948 NotebookApp] Saving file at /p.ipynb
+[I 17:01:32.917 NotebookApp] Saving file at /p.ipynb
+[I 17:03:32.930 NotebookApp] Saving file at /p.ipynb
+[I 17:05:32.929 NotebookApp] Saving file at /p.ipynb
+[I 17:07:32.933 NotebookApp] Saving file at /p.ipynb
+[I 17:09:32.928 NotebookApp] Saving file at /p.ipynb
+[I 17:10:37.444 NotebookApp] Saving file at /p.ipynb
+[I 17:11:32.915 NotebookApp] Saving file at /p.ipynb
+[I 17:13:32.925 NotebookApp] Saving file at /p.ipynb
+[I 17:15:32.934 NotebookApp] Saving file at /p.ipynb
+[I 17:16:25.713 NotebookApp] Saving file at /p.ipynb
+[I 17:16:40.246 NotebookApp] Saving file at /p.ipynb
+[I 17:17:02.906 NotebookApp] Saving file at /p.ipynb
