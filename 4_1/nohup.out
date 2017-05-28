@@ -15643,3 +15643,8 @@ AttributeError: 'module' object has no attribute ''
 [I 20:48:47.941 NotebookApp] Saving file at /p.ipynb
 [I 20:50:13.605 NotebookApp] Saving file at /p.ipynb
 [I 20:53:59.190 NotebookApp] Saving file at /p.ipynb
+[I 20:56:05.217 NotebookApp] 302 GET /notebooks/student_t_pdf.png (127.0.0.1) 1.37ms
+[I 20:56:05.220 NotebookApp] 302 GET /notebooks/Hypothesis_Testing.jpg (127.0.0.1) 1.30ms
+[I 20:56:05.221 NotebookApp] 302 GET /notebooks/stat_83.png (127.0.0.1) 1.08ms
+[W 20:56:05.440 NotebookApp] 404 GET /static/components/MathJax/jax/element/mml/optable/Latin1Supplement.js?rev=2.6.0 (127.0.0.1) 1.36ms referer=http://localhost:8888/notebooks/p.ipynb
+[I 20:56:25.943 NotebookApp] Saving file at /p.ipynb
