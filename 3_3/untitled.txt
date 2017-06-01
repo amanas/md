@@ -12,7 +12,12 @@
     
 \documentclass[11pt]{article}
 
-    
+ 
+
+    \usepackage{tocloft}
+    \usepackage{fancyhdr}
+    \usepackage{parskip}
+    \usepackage{indentfirst} 
     
     \usepackage[T1]{fontenc}
     % Nicer default font than Computer Modern for most use cases
@@ -140,10 +145,10 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{p}
+    \title{Minería de datos: máquinas de vectores soporte}
+ \author{Andrés Mañas Mañas}   
     
-    
-    
+ 
 
     % Pygments definitions
     
@@ -274,71 +279,24 @@
     
     \maketitle
     
-    
+    \setlength{\parindent}{30pt}
 
-    
-    \section{Table of Contents}\label{table-of-contents}
+\headheight 40pt            
+\headsep 20pt   
 
-{1~~}Resumen teórico
+\lhead{Máquinas de vectores soporte}
+\rhead{Andrés Mañas Mañas}
+ 
 
-{1.1~~}Definición formal
+  \thispagestyle{empty}
 
-{1.2~~}Funciones kernel
+    \clearpage  
+ 
+    \tableofcontents 
+    \setcounter{page}{1}
 
-{1.3~~}Outliers
+   \clearpage  
 
-{1.4~~}Preprocesado de datos
-
-{1.4.1~~}Atributos categóricos
-
-{1.4.2~~}Escalado
-
-{1.5~~}Selección del modelo
-
-{1.6~~}Cross-validation
-
-{2~~}Notas a la implementación
-
-{3~~}Análisis del fichero s
-
-{3.1~~}Cargar los ficheros s-train/test
-
-{3.2~~}Función de normalización
-
-{3.3~~}Seleccionar las 3 clases más frecuentes
-
-{3.4~~}Obtención de un clasificador MVS lineal en el espacio de
-parámetros
-
-{3.5~~}Realizar una búsqueda similar para núcleos polinómicos de grado 2
-
-{3.6~~}Obtención de un clasificador MVS lineal en el espacio proyectado
-mediante un núcleo gaussiano
-
-{4~~}Probar distintos tipos de nucleos con un problema no separable
-linealmente
-
-{4.1~~}Gausianas con escaso solape - separables linealmente
-
-{4.2~~}Gausianas fuertemente solapadas - no separables
-
-{4.3~~}Gausianas separables polinómicamente
-
-{5~~}Utilizar el resto de conjuntos y discutir los resultados
-
-{5.1~~}Conjunto c
-
-{5.2~~}Conjunto p
-
-{5.3~~}Conjunto v
-
-{5.4~~}Conjunto h
-
-{5.5~~}Conjunto z
-
-{5.6~~}Análisis de resultados en los conjuntos c, p, v, h y z
-
-{6~~}Referencias
 
     \section{Resumen teórico}\label{resumen-teuxf3rico}
 
@@ -363,7 +321,7 @@ de clasificación, escogiendo patrones que no hayan sido vistos durante
 la fase de entrenamiento, y aplicando una etiqueta (clase) en función
 del lado del hiperplano en el que se proyecten.
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
 \includegraphics{esquema-basico-svm.PNG}
 \caption{Figura 1: Ejemplo de 2 dimensiones para una máquina de soporte
@@ -388,7 +346,7 @@ tratar con:
   Clasificaciones en más de dos categorías
 \end{itemize}
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
 \includegraphics{no-separable-linealmente.PNG}
 \caption{Figura 2: Espacio de 2 dimensiones en el que los patrones no
@@ -432,7 +390,7 @@ funciones matemáticas que nos permiten proyectar los patrones en un
 espacio de mayor dimensión que el original dónde estos si son
 linealmente separables mediante un hiperplano (Figura 3).
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
 \includegraphics{ejemplo-kernel.PNG}
 \caption{Figura 4: Kernel de 2 a 3 dimensiones dónde los patrones pueden
@@ -448,19 +406,32 @@ mal comportamiento ante nuevos patrones y se hablará de
 
 Las funciones kernel más comunmente utilizadas son:
 
+
+
+
 \begin{itemize}
 \tightlist
 \item
-  \textbf{lineales}: \$ K(x\_i,x\_j) = x\_i\^{}T x\_j \$
+  \textbf{lineales}:  
+  $
+  K(x_i,x_j) = x_i^{}T x_j 
+  $
 \item
-  \textbf{polinómicas}: \$ K(x\_i,x\_j) = (\gamma x\_i\^{}T x\_j
-  +r)\^{}d, \gamma \ge 0 \$
+  \textbf{polinómicas}:  
+  $
+  K(x_i,x_j) = (\gamma x_i^{}T x_j  +r)^{}d, \gamma \ge 0 $
 \item
-  \textbf{funciones de base radial (RBF)}: \$ K(x\_i,x\_j) =
-  exp(-\gamma \lvert x\_i - x\_j \lvert \^{}2), \gamma \ge 0\$
+  \textbf{funciones de base radial (RBF)}:  
+  $
+  K(x_i,x_j) =
+  exp(-\gamma \lvert x_i - x_j \lvert ^2), \gamma \ge 0
+  $
 \item
-  \textbf{sigmoide}: \$ K(x\_i,x\_j) = \tanh(\gamma x\_i\^{}T x\_j +r)
-  \$
+  \textbf{sigmoide}:  
+  $
+  K(x_i,x_j) = \tanh(\gamma x_i^T x_j +r)
+  $
+  
 \end{itemize}
 
 \subsection{Outliers}\label{outliers}
@@ -522,9 +493,9 @@ solo número.
 
 \subsubsection{Escalado}\label{escalado}
 
-\textbf{Escalar los datos antes de aplicar las SVMs es muy importante.}
-La mayoría de las consideraciones hechas para redes neuronales también
-se aplican a las SVMs.
+Escalar los datos antes de aplicar las SVMs es muy importante. La
+mayoría de las consideraciones hechas para redes neuronales también se
+aplican a las SVMs.
 
 La principal ventaja de escalar es evitar que atributos cuyos valores se
 mueven en rangos numéricos altos dominen a aquellos que se mueven en
@@ -573,32 +544,49 @@ conoce como \textbf{sobreajuste}. Para evitarlo, es una práctica común
 cuando se realiza un experimento de aprendizaje (supervisado) mantener
 una parte de los datos disponibles como un conjunto de pruebas.
 
+Cuando se evalúan diferentes parámetros (``hiperparámetros'') para los
+estimadores, como el ajuste \textbf{C} que debe configurarse manualmente
+para un SVM, todavía existe el riesgo de sobreajuste en el conjunto de
+prueba porque los parámetros pueden ajustarse hasta que el estimador se
+ejecute óptimamente. De esta forma, el conocimiento sobre el conjunto de
+pruebas puede \textbf{``filtrarse''} en el modelo y las métricas de
+evaluación ya no informan sobre el rendimiento de la generalización.
+
+Para resolver este problema, otra parte del conjunto de datos puede ser
+presentada como un \textbf{``conjunto de validación''}: el entrenamiento
+continúa en el conjunto de entrenamiento, después de lo cual se realiza
+una evaluación en el conjunto de validación y cuando el experimento
+parece ser exitoso, la evaluación final se puede hacer en el conjunto de
+pruebas.
+
+Sin embargo, al dividir los datos disponibles en tres conjuntos,
+reducimos drásticamente el número de muestras que se pueden utilizar
+para aprender el modelo, y los resultados pueden depender de una
+elección aleatoria particular para el par de conjuntos (entrenamiento,
+validación).
+
 Una solución a este problema es un procedimiento llamado
-\textbf{validación cruzada} (CV para abreviar). Se guarda un conjunto de
-prueba para la evaluación final, que no se utiliza en ningún caso en el
-proceso de entrenamiento. En el enfoque básico, llamado \textbf{k-fold
-CV}, el conjunto de entrenamiento se divide en k conjuntos más pequeños.
-Se sigue el siguiente procedimiento para cada uno de los k ``bloques'',
-en diversas iteraciones:
+\textbf{validación cruzada} (CV para abreviar). Un conjunto de prueba
+todavía es necesario para la evaluación final, pero el conjunto de
+validación ya no es necesario al hacer CV. En el enfoque básico, llamado
+\textbf{k-fold CV}, el conjunto de entrenamiento se divide en k
+conjuntos más pequeños. Se sigue el siguiente procedimiento para cada
+uno de los k ``pliegues'', en bucle:
 
 \begin{itemize}
 \tightlist
 \item
-  El modelo es entrenado usando k-1 de los bloques
+  El modelo es entrenado usando k-1 de los pliegues como datos de
+  entrenamiento
 \item
-  El modelo resultante se valida en el bloque restante no utilizado en
-  esta iteración del entrenamiento
-\item
-  Este proceso se repite k veces (una para utilizando cada bloque como
-  prueba)
+  El modelo resultante se valida en la parte restante de los datos
 \end{itemize}
 
-Típicamente, la medida de rendimiento reportada por la validación
-cruzada k-fold es el promedio de los valores calculados en las k
-iteraciones. Este enfoque puede ser costoso desde el punto de vista
-computacional, pero garantiza que los datos iniciales de prueba
-realmente se utilizan sólo para las pruebas y que el entrenamiento puede
-ser más productivo.
+La medida de rendimiento reportada por la validación cruzada k-fold es
+el promedio de los valores calculados en el bucle. Este enfoque puede
+ser costoso desde el punto de vista computacional, pero no desperdicia
+demasiados datos (como ocurre cuando se fija un conjunto de pruebas
+arbitrario), lo cual es una ventaja importante.
 
 \section{Notas a la implementación}\label{notas-a-la-implementaciuxf3n}
 
@@ -633,43 +621,6 @@ s-train/test}\label{cargar-los-ficheros-s-traintest}
 \end{mdframed}
 \endgroup
 
-    \subsection{Función de
-normalización}\label{funciuxf3n-de-normalizaciuxf3n}
-
-Tal como se ha indicado en la parte teórica de la práctica, es
-fundamental normalizar los datos para obtener un correcto funcionamiento
-de las SVM's, y por extensión de casi cualquier algoritmo de minería de
-datos.
-
-Aquí tenemos una función que nos hace todo el trabajo - \textbf{nótese
-que normalizamos simultáneamente los datos de entrenamiento y de
-prueba}. Sabemos que no aplicar el mismo tipo de normalización a los
-datos con los que se prueba un modelo que a aquellos con los que se
-entrena es tanto como probar el modelo con datos de otro dominio del que
-estudia.
-
-    \begingroup
-\fontsize{8pt}{10pt}
-\begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
-
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{from} \PY{n+nn}{sklearn.preprocessing} \PY{k+kn}{import} \PY{n}{normalize}
-
-\PY{k}{def} \PY{n+nf}{normalize\PYZus{}data}\PY{p}{(}\PY{n}{train}\PY{p}{,} \PY{n}{test}\PY{p}{)}\PY{p}{:}
-    \PY{l+s+sd}{\PYZdq{}\PYZdq{}\PYZdq{}Normaliza los datos de entrenamiento y prueba}
-\PY{l+s+sd}{    y los devuelve como una tupla:}
-\PY{l+s+sd}{    X\PYZus{}train,y\PYZus{}train,X\PYZus{}test,y\PYZus{}test}
-\PY{l+s+sd}{    \PYZdq{}\PYZdq{}\PYZdq{}}
-    \PY{n}{data} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{train}\PY{p}{,} \PY{n}{test}\PY{p}{)}
-    \PY{n}{X} \PY{o}{=} \PY{n}{normalize}\PY{p}{(}\PY{p}{[}\PY{n+nb}{list}\PY{p}{(}\PY{n}{d}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{data}\PY{p}{]}\PY{p}{,} \PY{n}{axis}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
-    \PY{n}{y} \PY{o}{=} \PY{p}{[}\PY{n+nb}{list}\PY{p}{(}\PY{n}{d}\PY{p}{)}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]} \PY{k}{for} \PY{n}{d} \PY{o+ow}{in} \PY{n}{data}\PY{p}{]}
-    \PY{n}{l} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{train}\PY{p}{)}
-    \PY{k}{return} \PY{n}{X}\PY{p}{[}\PY{p}{:}\PY{n}{l}\PY{p}{]}\PY{p}{,}\PY{n}{y}\PY{p}{[}\PY{p}{:}\PY{n}{l}\PY{p}{]}\PY{p}{,}\PY{n}{X}\PY{p}{[}\PY{n}{l}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{y}\PY{p}{[}\PY{n}{l}\PY{p}{:}\PY{p}{]} 
-\end{Verbatim}
-
-\end{mdframed}
-\endgroup
-
     \subsection{Seleccionar las 3 clases más
 frecuentes}\label{seleccionar-las-3-clases-muxe1s-frecuentes}
 
@@ -680,15 +631,14 @@ frecuentes}\label{seleccionar-las-3-clases-muxe1s-frecuentes}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
 
+\PY{n}{classes} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{concatenate}\PY{p}{(}\PY{p}{(}\PY{n}{S\PYZus{}train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{S\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+\PY{n}{class\PYZus{}counts} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{n+nb}{zip}\PY{p}{(}\PY{o}{*}\PY{n}{np}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{n}{classes}\PY{p}{,}\PY{n}{return\PYZus{}counts}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+\PY{n}{top\PYZus{}three} \PY{o}{=} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{class\PYZus{}counts}\PY{p}{,} \PY{n}{key}\PY{o}{=}\PY{n}{class\PYZus{}counts}\PY{o}{.}\PY{n}{get}\PY{p}{,} \PY{n}{reverse}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{]}
 
-\PY{k}{def} \PY{n+nf}{top\PYZus{}three\PYZus{}categories}\PY{p}{(}\PY{n}{train}\PY{p}{,}\PY{n}{test}\PY{p}{)}\PY{p}{:}
-    \PY{n}{classes} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{concatenate}\PY{p}{(}\PY{p}{(}\PY{n}{train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
-    \PY{n}{class\PYZus{}counts} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{n+nb}{zip}\PY{p}{(}\PY{o}{*}\PY{n}{np}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{n}{classes}\PY{p}{,}\PY{n}{return\PYZus{}counts}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{)}\PY{p}{)}
-    \PY{n}{top\PYZus{}three} \PY{o}{=} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{class\PYZus{}counts}\PY{p}{,} \PY{n}{key}\PY{o}{=}\PY{n}{class\PYZus{}counts}\PY{o}{.}\PY{n}{get}\PY{p}{,} \PY{n}{reverse}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{]}
-    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Top 3 classes: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{top\PYZus{}three}
-    \PY{k}{return} \PY{n}{train}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{n}{test}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]}
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Top 3 classes: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{top\PYZus{}three}
 
-\PY{n}{S\PYZus{}top3\PYZus{}train}\PY{p}{,}\PY{n}{S\PYZus{}top3\PYZus{}test} \PY{o}{=} \PY{n}{top\PYZus{}three\PYZus{}categories}\PY{p}{(}\PY{n}{S\PYZus{}train}\PY{p}{,}\PY{n}{S\PYZus{}test}\PY{p}{)} 
+\PY{n}{S\PYZus{}top3\PYZus{}train} \PY{o}{=} \PY{n}{S\PYZus{}train}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{S\PYZus{}train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]}
+\PY{n}{S\PYZus{}top3\PYZus{}test}  \PY{o}{=} \PY{n}{S\PYZus{}test}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{S\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]} 
 \end{Verbatim}
 
 \end{mdframed}
@@ -717,8 +667,7 @@ exploratorio) si los \textbf{equiespaciamos en escala logarítmica}.
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{from} \PY{n+nn}{sklearn.model\PYZus{}selection} \PY{k+kn}{import} \PY{n}{GridSearchCV}
-\PY{n}{np}\PY{o}{.}\PY{n}{set\PYZus{}printoptions}\PY{p}{(}\PY{n}{formatter}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{float}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZob{}0:0.3f\PYZcb{}}\PY{l+s+s2}{\PYZdq{}}\PY{o}{.}\PY{n}{format}\PY{p}{(}\PY{n}{x}\PY{p}{)}\PY{p}{\PYZcb{}}\PY{p}{)}
-    
+
 \PY{n}{N} \PY{o}{=} \PY{l+m+mi}{20}
 \PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Cs: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{Cs} 
@@ -728,8 +677,11 @@ exploratorio) si los \textbf{equiespaciamos en escala logarítmica}.
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Cs: [0.001 0.002 0.003 0.004 0.007 0.011 0.018 0.030 0.048 0.078 0.127 0.207
- 0.336 0.546 0.886 1.438 2.336 3.793 6.158 10.000]
+Cs: [  1.00000000e-03   1.62377674e-03   2.63665090e-03   4.28133240e-03
+   6.95192796e-03   1.12883789e-02   1.83298071e-02   2.97635144e-02
+   4.83293024e-02   7.84759970e-02   1.27427499e-01   2.06913808e-01
+   3.35981829e-01   5.45559478e-01   8.85866790e-01   1.43844989e+00
+   2.33572147e+00   3.79269019e+00   6.15848211e+00   1.00000000e+01]
 
     \end{Verbatim}
 
@@ -737,8 +689,7 @@ Cs: [0.001 0.002 0.003 0.004 0.007 0.011 0.018 0.030 0.048 0.078 0.127 0.207
 anterior con la clase \textbf{GridSearchCV}.
 
 \textbf{Esta función realiza automáticamente el entrenamiento con
-cross-validation.} Por defecto utiliza 3 folds, y por defecto lo dejo,
-ya que probando con otros no se obtienen resultados mucho mejores.
+cross-validation.} Por defecto utiliza 3 folds, y por defecto lo dejo.
 
 Después, obtendremos la información que necesitamos simplemente llamando
 a los miembros:
@@ -761,9 +712,11 @@ a los miembros:
 \PY{k+kn}{from} \PY{n+nn}{sklearn} \PY{k+kn}{import} \PY{n}{svm}
 \PY{k+kn}{from} \PY{n+nn}{sklearn.model\PYZus{}selection} \PY{k+kn}{import} \PY{n}{GridSearchCV}
 
-\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{,}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{normalize\PYZus{}data}\PY{p}{(}\PY{n}{S\PYZus{}top3\PYZus{}train}\PY{p}{,}\PY{n}{S\PYZus{}top3\PYZus{}test}\PY{p}{)}
+\PY{n}{X\PYZus{}train} \PY{o}{=} \PY{n}{S\PYZus{}top3\PYZus{}train}\PY{p}{[}\PY{n}{S\PYZus{}meta}\PY{o}{.}\PY{n}{names}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+\PY{n}{y\PYZus{}train} \PY{o}{=} \PY{n}{S\PYZus{}top3\PYZus{}train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+
 \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                    \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+                   \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
 \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
 
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}
@@ -774,77 +727,69 @@ a los miembros:
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Mejor C: 10.0
-Puntuación del mejor modelo: 0.835616438356
+Mejor C: 0.001
+Puntuación del mejor modelo: 0.753424657534
 
     \end{Verbatim}
 
-    Como el mejor C enontrado se corresponde con el extremo derecho de los
+    Como el mejor C enontrado se corresponde con el extremo izquierdo de los
 probados en nuestro \textbf{grid}, vamos a aumentar el intervalo de
-prueba por la derecha:
+prueba por la izquierda:
 
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Cs: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{n}{Cs}
-
+\PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
 \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
                    \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
 \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}score\PYZus{}} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Cs: [10.000 12.743 16.238 20.691 26.367 33.598 42.813 54.556 69.519 88.587
- 112.884 143.845 183.298 233.572 297.635 379.269 483.293 615.848 784.760
- 1000.000]
-Mejor C: 183.298071083
-Puntuación del mejor modelo: 0.90756302521
+Mejor C: 8.8586679041e-05
+Puntuación del mejor modelo: 0.753424657534
 
     \end{Verbatim}
 
-    Aunque el rendimiento de esta SVM es bastante bueno (90\%), resulta
-bastante incómodo que el valor C sea tan grande. Es decir, el mejor
-modelo encontrado \textbf{es de margen muy rígido}, lo que puede sugerir
-que el modelo está sobreajustado.
+    Tomamos entonces como mejor valor \textbf{C = 8.8586679041e-05}.
 
-Para disipar esta duda, podemos hacer el mismo experimento pero probando
-con un valor más blando y ver si se obtienen resultados parecidos.
+\textbf{Como la mejor máquina ofrece unos resultados de clasificación en
+torno al 0.75\%, entiendo que el problema NO es linealmente separable.}
+En mi opinión, los resultados del SVM con kernel lineal debieran ser
+mejores para considerar el problema linealmente separable.
+
+Podemos evaluar entonces la mejor SVM encontrada en nuestro conjunto de
+prueba:
 
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                   \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{p}{[}\PY{l+m+mf}{0.1}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-\PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del modelo con C=0.1: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
+\PY{n}{X\PYZus{}test} \PY{o}{=} \PY{n}{S\PYZus{}top3\PYZus{}test}\PY{p}{[}\PY{n}{S\PYZus{}meta}\PY{o}{.}\PY{n}{names}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+\PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{S\PYZus{}top3\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación en el conjunto de prueba: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Puntuación del modelo con C=0.1: 0.36974789916
+Puntuación en el conjunto de prueba: 0.680672268908
 
     \end{Verbatim}
 
-    \textbf{Aunque hemos encontrado una máquina que ofrece unos resultados
-de clasificación en torno al 0.90\%, el parámetro de penalización de los
-errores de clasificación de la misma es altísimo, C=183. Sin embargo,
-probando coma un valor C=0.1 más pequeño, vemos que el rendimiento de la
-máquina obtenida es muy pequeño. Por lo tanto, entiendo que esto nos
-invita a pensar que el problema NO es linealmente separable.} Sería
-linealmente separable si obtuviéramos buenos resultados de clasificación
-con una máquina de margen blando (C próximo a 0).
+    Por desgracia, en la evaluación de los datos de prueba el rendimiento se
+degrada un poco. Sin embargo, dado que el valor de C es muy bajo, no es
+de suponer se haya producido sobreajuste en el entrenamiento.
 
     \subsection{Realizar una búsqueda similar para núcleos polinómicos de
 grado
@@ -858,45 +803,26 @@ utilizando una función kernel de tipo polinómica.
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{N} \PY{o}{=} \PY{l+m+mi}{20}
-\PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-\PY{n}{Gs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-
-\PY{k}{for} \PY{n}{n} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{:}  \PY{c+c1}{\PYZsh{} Probamos hasta grado 5}
-    \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{poly}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{degree}\PY{o}{=}\PY{n}{n}\PY{p}{)}\PY{p}{,} 
-                        \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{,}\PY{n}{gamma}\PY{o}{=}\PY{n}{Gs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-    \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Con grado }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{n}
-    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}
-    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor gamma: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{gamma}
-    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
+\PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{poly}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{degree}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{,} 
+                   \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
+\PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}score\PYZus{}}
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación en el conjunto de prueba: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Con grado 1
-Mejor C: 10.0
-Mejor gamma: 10.0
-Puntuación del mejor modelo: 0.890756302521
-Con grado 2
-Mejor C: 10.0
-Mejor gamma: 10.0
-Puntuación del mejor modelo: 0.90756302521
-Con grado 3
-Mejor C: 3.79269019073
-Mejor gamma: 10.0
-Puntuación del mejor modelo: 0.915966386555
-Con grado 4
-Mejor C: 3.79269019073
-Mejor gamma: 10.0
-Puntuación del mejor modelo: 0.90756302521
+Mejor C: 1e-05
+Puntuación del mejor modelo: 0.72602739726
+Puntuación en el conjunto de prueba: 0.663865546218
 
     \end{Verbatim}
 
-    Vemos que obtenemos una máquina capaz de clasificar el 91\% de las
-instancias con un C=3.79, es decir, de margen blando.
+    Vemos que el mejor resultado no mejora a los resultado obtenidos con un
+kernel lineal.
 
 \subsection{Obtención de un clasificador MVS lineal en el espacio
 proyectado mediante un núcleo
@@ -904,7 +830,8 @@ gaussiano}\label{obtenciuxf3n-de-un-clasificador-mvs-lineal-en-el-espacio-proyec
 
 Repetimos los pasos del apartado anterior incluyendo en la ventana de
 parámetros explorados dos entradas, una para el parámetro C y otra para
-G (gamma) del núcleo gaussiano o de base radial.
+G (gamma) del núcleo gaussiano o de base radial. Disminuyo N a 10, es
+decir, 100 combinaciones en total.
 
     \begingroup
 \fontsize{8pt}{10pt}
@@ -913,29 +840,28 @@ G (gamma) del núcleo gaussiano o de base radial.
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{N} \PY{o}{=} \PY{l+m+mi}{20}
 \PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-\PY{n}{Gs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
+\PY{n}{Gs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{15}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{,} \PY{n}{N}\PY{p}{,} \PY{n}{base}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
 \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rbf}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
                     \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{,} \PY{n}{gamma}\PY{o}{=}\PY{n}{Gs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
 \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Mejor gamma: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{gamma}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del mejor modelo: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}score\PYZus{}}
+\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación en el conjunto de prueba: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Mejor C: 3.79269019073
-Mejor gamma: 3.79269019073
-Puntuación del mejor modelo: 0.873949579832
+Mejor C: 0.0784759970351
+Puntuación del mejor modelo: 0.753424657534
+Puntuación en el conjunto de prueba: 0.663865546218
 
     \end{Verbatim}
 
-    En este caso observamos que aunque el scoring obtenido por el mejor
-modelo encontrado es similar al mejor encontrado en el caso anterior, el
-parámetro gamma es inferior. Entiendo que podemos pensar que para este
-conjunto de datos, SVMs basadas en núcleos gausianos son más apropiadas.
+    Observamos que los mejores resultados se encuentran con valores de gamma
+muy pequeños, aunque no mejoran los que se encontraron en el caso del
+núcleo lineal.
 
     \section{Probar distintos tipos de nucleos con un problema no separable
 linealmente}\label{probar-distintos-tipos-de-nucleos-con-un-problema-no-separable-linealmente}
@@ -1002,7 +928,7 @@ distintas.
 \endgroup
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_24_0.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_22_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1015,7 +941,6 @@ confirmarlo encontrando una SVM con un buen rendimiento:
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{C}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model score: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test}\PY{p}{)}
 \PY{n}{plot\PYZus{}decision\PYZus{}function}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)} 
 \end{Verbatim}
@@ -1024,13 +949,12 @@ confirmarlo encontrando una SVM con un buen rendimiento:
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Model C: 1.0
-Model score: 1.0
+Model score: 0.994
 
     \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_26_1.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_24_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1058,7 +982,7 @@ distintas.
 \endgroup
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_28_0.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_26_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1068,7 +992,6 @@ distintas.
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{C}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model score: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test}\PY{p}{)}
 \PY{n}{plot\PYZus{}decision\PYZus{}function}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)} 
 \end{Verbatim}
@@ -1077,13 +1000,12 @@ distintas.
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Model C: 1.0
-Model score: 0.592
+Model score: 0.616
 
     \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_29_1.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_27_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1110,7 +1032,7 @@ polinómicamente}\label{gausianas-separables-polinuxf3micamente}
 \endgroup
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_31_0.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_29_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1122,7 +1044,6 @@ polinómicamente}\label{gausianas-separables-polinuxf3micamente}
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{C}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model score: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test}\PY{p}{)}
 \PY{n}{plot\PYZus{}decision\PYZus{}function}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)} 
 \end{Verbatim}
@@ -1131,13 +1052,12 @@ polinómicamente}\label{gausianas-separables-polinuxf3micamente}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Model C: 1.0
 Model score: 0.802
 
     \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_33_1.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_31_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1154,7 +1074,6 @@ mejor resultado:
 
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rbf}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{)}
-\PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model C: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{C}
 \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Model score: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test}\PY{p}{)}
 \PY{n}{plot\PYZus{}decision\PYZus{}function}\PY{p}{(}\PY{n}{model}\PY{p}{,} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)} 
 \end{Verbatim}
@@ -1163,13 +1082,12 @@ mejor resultado:
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Model C: 1.0
-Model score: 0.994
+Model score: 0.992
 
     \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{p_files/p_35_1.png}
+    \adjustimage{max size={0.6\linewidth}{0.9\paperheight}}{p_33_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1190,8 +1108,18 @@ datos de cada conjunto y realizan los distintos experimentos.
 \PY{k}{def} \PY{n+nf}{prepare\PYZus{}data}\PY{p}{(}\PY{n}{name}\PY{p}{)}\PY{p}{:}
     \PY{n}{train}\PY{p}{,}\PY{n}{meta} \PY{o}{=} \PY{n}{loadarff}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{svm\PYZhy{}data/}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZhy{}train.arff}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{name}\PY{p}{)}
     \PY{n}{test}\PY{p}{,}\PY{n}{\PYZus{}}     \PY{o}{=} \PY{n}{loadarff}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{svm\PYZhy{}data/}\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZhy{}test.arff}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{name}\PY{p}{)}
-    \PY{n}{top3\PYZus{}train}\PY{p}{,}\PY{n}{top3\PYZus{}test} \PY{o}{=} \PY{n}{top\PYZus{}three\PYZus{}categories}\PY{p}{(}\PY{n}{train}\PY{p}{,}\PY{n}{test}\PY{p}{)}    
-    \PY{k}{return} \PY{n}{normalize\PYZus{}data}\PY{p}{(}\PY{n}{top3\PYZus{}train}\PY{p}{,}\PY{n}{top3\PYZus{}test}\PY{p}{)} 
+
+    \PY{n}{classes} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{concatenate}\PY{p}{(}\PY{p}{(}\PY{n}{train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+    \PY{n}{class\PYZus{}counts} \PY{o}{=} \PY{n+nb}{dict}\PY{p}{(}\PY{n+nb}{zip}\PY{p}{(}\PY{o}{*}\PY{n}{np}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{n}{classes}\PY{p}{,}\PY{n}{return\PYZus{}counts}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+    \PY{n}{top\PYZus{}three} \PY{o}{=} \PY{n+nb}{sorted}\PY{p}{(}\PY{n}{class\PYZus{}counts}\PY{p}{,} \PY{n}{key}\PY{o}{=}\PY{n}{class\PYZus{}counts}\PY{o}{.}\PY{n}{get}\PY{p}{,} \PY{n}{reverse}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{3}\PY{p}{]}
+    \PY{n}{top3\PYZus{}train} \PY{o}{=} \PY{n}{train}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]}
+    \PY{n}{top3\PYZus{}test}  \PY{o}{=} \PY{n}{test}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{in1d}\PY{p}{(}\PY{n}{test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{top\PYZus{}three}\PY{p}{)}\PY{p}{]}
+
+    \PY{n}{X\PYZus{}train} \PY{o}{=} \PY{n}{top3\PYZus{}train}\PY{p}{[}\PY{n}{meta}\PY{o}{.}\PY{n}{names}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+    \PY{n}{y\PYZus{}train} \PY{o}{=} \PY{n}{top3\PYZus{}train}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}    
+    \PY{n}{X\PYZus{}test} \PY{o}{=}  \PY{n}{top3\PYZus{}test}\PY{p}{[}\PY{n}{meta}\PY{o}{.}\PY{n}{names}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}
+    \PY{n}{y\PYZus{}test} \PY{o}{=}  \PY{n}{top3\PYZus{}test}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{class}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+    \PY{k}{return} \PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} 
 \end{Verbatim}
 
 \end{mdframed}
@@ -1205,41 +1133,28 @@ para no eternizar la tarea.
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{k}{def} \PY{n+nf}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{name}\PY{p}{)}\PY{p}{:}
-        
-    \PY{n}{N} \PY{o}{=} \PY{l+m+mi}{20}
-    \PY{n}{Cs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-    \PY{n}{Gs} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{logspace}\PY{p}{(}\PY{o}{\PYZhy{}}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{,} \PY{n}{N}\PY{p}{)}
-    \PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{,}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{n}{name}\PY{p}{)}
+\PY{k}{def} \PY{n+nf}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,}\PY{n}{y\PYZus{}train}\PY{p}{,}\PY{n}{X\PYZus{}test}\PY{p}{,}\PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{:}
+    \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del clasificador lineal: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}
     
-    \PY{n}{result} \PY{o}{=} \PY{p}{[}\PY{p}{]}
-    \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                        \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-    \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-    \PY{n}{result} \PY{o}{+}\PY{o}{=} \PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Lineal}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}\PY{p}{,} \PY{n+nb+bp}{None}\PY{p}{,}
-                \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{]}\PY{p}{]}
+    \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{poly}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{degree}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+    \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del clasificador polinómico (grado 2): }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PYZbs{}
+            \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}
     
-    \PY{k}{for} \PY{n}{n} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{)}\PY{p}{:}
-        \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{poly}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{degree}\PY{o}{=}\PY{n}{n}\PY{p}{)}\PY{p}{,} 
-                            \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{,} \PY{n}{gamma}\PY{o}{=}\PY{n}{Gs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-        \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-        \PY{n}{result} \PY{o}{+}\PY{o}{=} \PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Poly (grado }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{)}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{n}\PY{p}{,} 
-                    \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{gamma}\PY{p}{,}
-                    \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{]}\PY{p}{]}
+    \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{poly}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{degree}\PY{o}{=}\PY{l+m+mi}{3}\PY{p}{)}
+    \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del clasificador polinómico (grado 3): }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PYZbs{}
+            \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}
     
-    \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rbf}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                        \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{,} \PY{n}{gamma}\PY{o}{=}\PY{n}{Gs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-    \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-    \PY{n}{result} \PY{o}{+}\PY{o}{=} \PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{RBF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{gamma}\PY{p}{,}
-                \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{]}\PY{p}{]}
+    \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rbf}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del clasificador rbf: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}
     
-    \PY{n}{gscv} \PY{o}{=} \PY{n}{GridSearchCV}\PY{p}{(}\PY{n}{estimator}\PY{o}{=}\PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{,} 
-                        \PY{n}{param\PYZus{}grid}\PY{o}{=}\PY{n+nb}{dict}\PY{p}{(}\PY{n}{C}\PY{o}{=}\PY{n}{Cs}\PY{p}{,}\PY{n}{gamma}\PY{o}{=}\PY{n}{Gs}\PY{p}{)}\PY{p}{,} \PY{n}{n\PYZus{}jobs}\PY{o}{=}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{)}
-    \PY{n}{gscv}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
-    \PY{n}{result} \PY{o}{+}\PY{o}{=} \PY{p}{[}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{C}\PY{p}{,} \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{gamma}\PY{p}{,}
-                \PY{n}{gscv}\PY{o}{.}\PY{n}{best\PYZus{}estimator\PYZus{}}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)}\PY{p}{]}\PY{p}{]}
-    
-    \PY{k}{return} \PY{n}{result} 
+    \PY{n}{model} \PY{o}{=} \PY{n}{svm}\PY{o}{.}\PY{n}{SVC}\PY{p}{(}\PY{n}{kernel}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{)}
+    \PY{k}{print} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Puntuación del clasificador sigmoid: }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{model}\PY{o}{.}\PY{n}{score}\PY{p}{(}\PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
@@ -1247,68 +1162,29 @@ para no eternizar la tarea.
 
     \subsection{Conjunto c}\label{conjunto-c}
 
-Definimos además una función que nos permite exportar a latex un
-dataframe de pandas.
-
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k+kn}{as} \PY{n+nn}{pd}
-\PY{n}{pd}\PY{o}{.}\PY{n}{set\PYZus{}option}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{display.notebook\PYZus{}repr\PYZus{}html}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n+nb+bp}{True}\PY{p}{)}
-
-\PY{k}{def} \PY{n+nf}{\PYZus{}repr\PYZus{}latex\PYZus{}}\PY{p}{(}\PY{n+nb+bp}{self}\PY{p}{)}\PY{p}{:}
-    \PY{k}{return} \PY{n+nb+bp}{self}\PY{o}{.}\PY{n}{to\PYZus{}latex}\PY{p}{(}\PY{p}{)}
-
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{o}{.}\PY{n}{\PYZus{}repr\PYZus{}latex\PYZus{}} \PY{o}{=} \PY{n}{\PYZus{}repr\PYZus{}latex\PYZus{}} 
+\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{c}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
-    Y realizamos el experimento:
+    \begin{Verbatim}[commandchars=\\\{\}]
+Puntuación del clasificador lineal: 0.521008403361
+Puntuación del clasificador polinómico (grado 2): 0.504201680672
+Puntuación del clasificador polinómico (grado 3): 0.487394957983
+Puntuación del clasificador rbf: 0.613445378151
+Puntuación del clasificador sigmoid: 0.420168067227
 
-    \begingroup
-\fontsize{8pt}{10pt}
-\begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
+    \end{Verbatim}
 
-\begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{result} \PY{o}{=} \PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{c}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{result}\PY{p}{,}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kernel}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{scoring}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} 
-\end{Verbatim}
-
-\end{mdframed}
-\endgroup
-\begingroup
-            \fontsize{8pt}{10pt}
-            \begin{mdframed}[hidealllines=true,backgroundcolor=green!10]
-            
-    
-    \begin{tabular}{llrrr}
-\toprule
-{} &          kernel &        C &    gamma &  scoring \\
-\midrule
-0 &          Lineal &  10.0000 &      NaN &   0.8655 \\
-1 &  Poly (grado 1) &   1.4384 &  10.0000 &   0.8739 \\
-2 &  Poly (grado 2) &  10.0000 &  10.0000 &   0.9244 \\
-3 &  Poly (grado 3) &   6.1585 &  10.0000 &   0.9160 \\
-4 &  Poly (grado 4) &   6.1585 &  10.0000 &   0.8992 \\
-5 &             RBF &  10.0000 &  10.0000 &   0.9244 \\
-6 &         Sigmoid &   2.3357 &   6.1585 &   0.8739 \\
-\bottomrule
-\end{tabular}
-
-    
-
-            \end{mdframed}
-            \endgroup
-    \emph{Fugura: resultados de probar distintios modelos en el conjunto c}
-
-La mejor puntuación la obtiene el núcleo rbf y el polinómico de grado 2.
-Sin embargo, utilizan valores de C más altos que el sigmoid. Entiendo
-que la mejor opción sería el polinómico de grado 1, que no compremete el
-sobreajuste en realión al rendimiento.
+    La mejor puntuación la obtiene el núcleo rbf, aunque el resultado es
+bastante malo.
 
 \subsection{Conjunto p}\label{conjunto-p}
 
@@ -1317,194 +1193,113 @@ sobreajuste en realión al rendimiento.
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{result} \PY{o}{=} \PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{p}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{result}\PY{p}{,}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kernel}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{scoring}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} 
+\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{p}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Top 3 classes: ['46', '20', '110']
+Puntuación del clasificador lineal: 0.46218487395
+Puntuación del clasificador polinómico (grado 2): 0.436974789916
+Puntuación del clasificador polinómico (grado 3): 0.453781512605
+Puntuación del clasificador rbf: 0.453781512605
+Puntuación del clasificador sigmoid: 0.36974789916
 
     \end{Verbatim}
-\begingroup
-            \fontsize{8pt}{10pt}
-            \begin{mdframed}[hidealllines=true,backgroundcolor=green!10]
-            
-    
-    \begin{tabular}{llrrr}
-\toprule
-{} &          kernel &        C &  gamma &  scoring \\
-\midrule
-0 &          Lineal &  10.0000 &    NaN &   0.7983 \\
-1 &  Poly (grado 1) &   6.1585 &   10.0 &   0.8571 \\
-2 &  Poly (grado 2) &   3.7927 &   10.0 &   0.8571 \\
-3 &  Poly (grado 3) &   3.7927 &   10.0 &   0.8487 \\
-4 &  Poly (grado 4) &   3.7927 &   10.0 &   0.8487 \\
-5 &             RBF &   6.1585 &   10.0 &   0.8487 \\
-6 &         Sigmoid &  10.0000 &   10.0 &   0.8908 \\
-\bottomrule
-\end{tabular}
 
-    
-
-            \end{mdframed}
-            \endgroup
-    \emph{Fugura: resultados de probar distintios modelos en el conjunto p}
-
-Entiendo que una buena opción en este caso podría ser el núcleo
-polinómico de grado 2, puesto que ofrece buen resultado con penalización
-de error baja.
-
-\subsection{Conjunto v}\label{conjunto-v}
+    \subsection{Conjunto v}\label{conjunto-v}
 
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{result} \PY{o}{=} \PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{result}\PY{p}{,}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kernel}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{scoring}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} 
+\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{v}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Top 3 classes: ['46', '20', '110']
+Puntuación del clasificador lineal: 0.495798319328
+Puntuación del clasificador polinómico (grado 2): 0.512605042017
+Puntuación del clasificador polinómico (grado 3): 0.504201680672
+Puntuación del clasificador rbf: 0.512605042017
+Puntuación del clasificador sigmoid: 0.36974789916
 
     \end{Verbatim}
-\begingroup
-            \fontsize{8pt}{10pt}
-            \begin{mdframed}[hidealllines=true,backgroundcolor=green!10]
-            
-    
-    \begin{tabular}{llrrr}
-\toprule
-{} &          kernel &        C &  gamma &  scoring \\
-\midrule
-0 &          Lineal &  10.0000 &    NaN &   0.7227 \\
-1 &  Poly (grado 1) &   6.1585 &   10.0 &   0.8571 \\
-2 &  Poly (grado 2) &   6.1585 &   10.0 &   0.8655 \\
-3 &  Poly (grado 3) &   6.1585 &   10.0 &   0.8908 \\
-4 &  Poly (grado 4) &  10.0000 &   10.0 &   0.8739 \\
-5 &             RBF &  10.0000 &   10.0 &   0.8992 \\
-6 &         Sigmoid &  10.0000 &   10.0 &   0.8487 \\
-\bottomrule
-\end{tabular}
 
-    
-
-            \end{mdframed}
-            \endgroup
-    \emph{Fugura: resultados de probar distintios modelos en el conjunto v}
-
-\subsection{Conjunto h}\label{conjunto-h}
+    \subsection{Conjunto h}\label{conjunto-h}
 
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{result} \PY{o}{=} \PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{h}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{result}\PY{p}{,}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kernel}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{scoring}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} 
+\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{h}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Top 3 classes: ['46', '20', '110']
+Puntuación del clasificador lineal: 0.36974789916
+Puntuación del clasificador polinómico (grado 2): 0.36974789916
+Puntuación del clasificador polinómico (grado 3): 0.344537815126
+Puntuación del clasificador rbf: 0.478991596639
+Puntuación del clasificador sigmoid: 0.36974789916
 
     \end{Verbatim}
-\begingroup
-            \fontsize{8pt}{10pt}
-            \begin{mdframed}[hidealllines=true,backgroundcolor=green!10]
-            
-    
-    \begin{tabular}{llrrr}
-\toprule
-{} &          kernel &        C &  gamma &  scoring \\
-\midrule
-0 &          Lineal &  10.0000 &    NaN &   0.6975 \\
-1 &  Poly (grado 1) &  10.0000 &   10.0 &   0.8739 \\
-2 &  Poly (grado 2) &   6.1585 &   10.0 &   0.8739 \\
-3 &  Poly (grado 3) &   3.7927 &   10.0 &   0.8739 \\
-4 &  Poly (grado 4) &   2.3357 &   10.0 &   0.8655 \\
-5 &             RBF &   6.1585 &   10.0 &   0.8824 \\
-6 &         Sigmoid &  10.0000 &   10.0 &   0.8655 \\
-\bottomrule
-\end{tabular}
 
-    
-
-            \end{mdframed}
-            \endgroup
-    \emph{Fugura: resultados de probar distintios modelos en el conjunto h}
-
-Entiendo que una buena opción en este caso podría ser el núcleo
-polinómico de grado 4 o el RBF, puesto que ofrecen buen resultado con
-penalización de error baja.
-
-\subsection{Conjunto z}\label{conjunto-z}
+    \subsection{Conjunto z}\label{conjunto-z}
 
     \begingroup
 \fontsize{8pt}{10pt}
 \begin{mdframed}[hidealllines=true,backgroundcolor=blue!5]
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{result} \PY{o}{=} \PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{n}{result}\PY{p}{,}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kernel}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{gamma}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{scoring}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{.}\PY{n}{round}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)} 
+\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test} \PY{o}{=} \PY{n}{prepare\PYZus{}data}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{z}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\PY{n}{try\PYZus{}different\PYZus{}models}\PY{p}{(}\PY{n}{X\PYZus{}train}\PY{p}{,} \PY{n}{y\PYZus{}train}\PY{p}{,} \PY{n}{X\PYZus{}test}\PY{p}{,} \PY{n}{y\PYZus{}test}\PY{p}{)} 
 \end{Verbatim}
 
 \end{mdframed}
 \endgroup
 
     \begin{Verbatim}[commandchars=\\\{\}]
-Top 3 classes: ['46', '20', '110']
+Puntuación del clasificador lineal: 0.386554621849
+Puntuación del clasificador polinómico (grado 2): 0.319327731092
+Puntuación del clasificador polinómico (grado 3): 0.352941176471
+Puntuación del clasificador rbf: 0.470588235294
+Puntuación del clasificador sigmoid: 0.36974789916
 
     \end{Verbatim}
-\begingroup
-            \fontsize{8pt}{10pt}
-            \begin{mdframed}[hidealllines=true,backgroundcolor=green!10]
-            
-    
-    \begin{tabular}{llrrr}
-\toprule
-{} &          kernel &        C &  gamma &  scoring \\
-\midrule
-0 &          Lineal &  10.0000 &    NaN &   0.6975 \\
-1 &  Poly (grado 1) &  10.0000 &   10.0 &   0.8908 \\
-2 &  Poly (grado 2) &   6.1585 &   10.0 &   0.8908 \\
-3 &  Poly (grado 3) &   6.1585 &   10.0 &   0.8992 \\
-4 &  Poly (grado 4) &   3.7927 &   10.0 &   0.8992 \\
-5 &             RBF &   6.1585 &   10.0 &   0.8908 \\
-6 &         Sigmoid &  10.0000 &   10.0 &   0.8824 \\
-\bottomrule
-\end{tabular}
 
-    
-
-            \end{mdframed}
-            \endgroup
-    \emph{Fugura: resultados de probar distintios modelos en el conjunto z}
-
-Entiendo que una buena opción en este caso podría ser el núcleo
-polinómico de grado 4, puesto que ofrece buen resultado con penalización
-de error baja.
-
-\subsection{Análisis de resultados en los conjuntos c, p, v, h y
+    \subsection{Análisis de resultados en los conjuntos c, p, v, h y
 z}\label{anuxe1lisis-de-resultados-en-los-conjuntos-c-p-v-h-y-z}
 
-En ninguno de estos conjuntos el nucleo lineal ofrece resultados mejores
-que los otros núcleos, y siempre se encuentra con valores de C altos
-(10, el valor más alto considero en el experimento). Por eso me inclino
-a pensar que ninguno de estos conjuntos debe de ser linealmente
-separable.
+Comparados con los resultados que hemos obtenido para el conjunto s,
+estos resultados son bastante bajos. Sin embargo, en el caso del
+conjunto s llevamos a cabo una exploración bastante más profunda de los
+distintos núcleos y de los parámetros que se usaron en cada caso.
 
-En la sección anterior, para cada conjunto de datos, se han análizado
-los núcleos que podrían considerarse más convenientes.
+En el caso los conjuntos analizados en este apartado, se han tomado los
+parámetros por defecto de cada núcleo. Al no haberse hecho una búsqueda
+en el dominio de parámetros para dar con aquellos que mejor trabajen en
+cada problema es natural que los resultados no hayan sido
+satisfactorios.
+
+Proceder a semejante análisis para cada uno de estos conjuntos se sale
+de la cantidad de tiempo que puedo dedicarle a esta práctica.
+
+En cualquier caso, me parece importante resaltar que en 4 de los 5
+conjuntos tratados en este apartado el núcleo basado en funciones de
+base radial ha ofrecido el mejor rendimiento. Esto está en coherencia
+con lo que citaba en el punto 1.5, dónde según {[}4{]} el núcleo RBF
+suele ser un buen comienzo en la exploración.
 
     \section{Referencias}\label{referencias}
 
