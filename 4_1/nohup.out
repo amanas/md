@@ -15648,3 +15648,6 @@ AttributeError: 'module' object has no attribute ''
 [I 20:56:05.221 NotebookApp] 302 GET /notebooks/stat_83.png (127.0.0.1) 1.08ms
 [W 20:56:05.440 NotebookApp] 404 GET /static/components/MathJax/jax/element/mml/optable/Latin1Supplement.js?rev=2.6.0 (127.0.0.1) 1.36ms referer=http://localhost:8888/notebooks/p.ipynb
 [I 20:56:25.943 NotebookApp] Saving file at /p.ipynb
+[C 20:58:05.245 NotebookApp] received signal 15, stopping
+[I 20:58:05.246 NotebookApp] Shutting down kernels
+[I 20:58:05.347 NotebookApp] Kernel shutdown: fcbe54ea-0443-4991-947c-adda20de0a16
