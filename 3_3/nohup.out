@@ -1215,3 +1215,5 @@
 [I 21:08:20.698 NotebookApp] Saving file at /p.ipynb
 [I 21:08:57.246 NotebookApp] Kernel shutdown: a1e483d0-0728-4359-b0d6-930da4c90ef2
 couldn't lock 16384 bytes of memory (secret_session): No se pudo asignar memoria
+[C 21:13:18.303 NotebookApp] received signal 15, stopping
+[I 21:13:18.304 NotebookApp] Shutting down kernels
