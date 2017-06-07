@@ -2,9 +2,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi
 from sklearn import datasets
+import os.path
+import pickle
+
 
 iris = datasets.load_iris()
 
+def save_object(name, the_object):
+    with open(name, 'wb') as output:
+        pickle.dump(the_object, output, pickle.HIGHEST_PROTOCOL)
+
+
+def get_if_already_done(name):
+    if os.path.isfile(name):
+        with open(name, 'rb') as input:
+            return pickle.load(input)
+        
 def voronoi_finite_polygons_2d(vor, radius=None):
     """
     Reconstruct infinite voronoi regions in a 2D diagram to finite
@@ -90,15 +103,14 @@ def voronoi_finite_polygons_2d(vor, radius=None):
 
 
 
-
-def plot_voronoi(name,model,x,y):    
+def plot_voronoi(name,model,x,y,alpha=0.25):    
     centroids = model.cluster_centers_[:,[x,y]]
     vor = Voronoi(centroids)
     regions, vertices = voronoi_finite_polygons_2d(vor,radius=1000) 
     i=0
     for region in regions:
         polygon = vertices[region]
-        plt.fill(*zip(*polygon), alpha=0.25, label='cluster ' + str(i))
+        plt.fill(*zip(*polygon), alpha=alpha, label='cluster ' + str(i))
         i+=1 
     plt.scatter(centroids[:,0], centroids[:,1], c='r',label='centroide')
     plt.xlim(min(vor.min_bound) - 2, max(vor.max_bound) + 2)
