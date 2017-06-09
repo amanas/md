@@ -15651,3 +15651,75 @@ AttributeError: 'module' object has no attribute ''
 [C 20:58:05.245 NotebookApp] received signal 15, stopping
 [I 20:58:05.246 NotebookApp] Shutting down kernels
 [I 20:58:05.347 NotebookApp] Kernel shutdown: fcbe54ea-0443-4991-947c-adda20de0a16
+[I 19:24:28.820 NotebookApp] [nb_conda_kernels] enabled, 3 kernels found
+[I 19:24:29.082 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.2.4
+[I 19:24:29.710 NotebookApp] [nb_anacondacloud] enabled
+[I 19:24:29.717 NotebookApp] [nb_conda] enabled
+[I 19:24:29.788 NotebookApp] ✓ nbpresent HTML export ENABLED
+[I 19:24:29.788 NotebookApp] ✓ nbpresent PDF export ENABLED
+[I 19:24:29.793 NotebookApp] Serving notebooks from local directory: /home/yolki/Escritorio/ai/md/4_1
+[I 19:24:29.793 NotebookApp] 0 active kernels 
+[I 19:24:29.793 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=73f22206a723ff9436afb1de82ca6e06139431fd0707c371
+[I 19:24:29.793 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 19:24:29.795 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=73f22206a723ff9436afb1de82ca6e06139431fd0707c371
+[I 19:24:30.552 NotebookApp] Accepting one-time-token-authenticated connection from 127.0.0.1
+Se ha abierto una nueva ventana en la sesión actual del navegador.
+[W 19:24:43.990 NotebookApp] 404 GET /api/kernels/ec83e2eb-0e0e-404a-b462-4518dde4432a/channels?session_id=50D56916272341F78B04815A1E1784AD (127.0.0.1): Kernel does not exist: ec83e2eb-0e0e-404a-b462-4518dde4432a
+[W 19:24:44.009 NotebookApp] 404 GET /api/kernels/ec83e2eb-0e0e-404a-b462-4518dde4432a/channels?session_id=50D56916272341F78B04815A1E1784AD (127.0.0.1) 58.24ms referer=None
+[I 19:25:39.603 NotebookApp] Kernel started: b07f087c-126f-4058-8d25-048b88b4e9b7
+[I 19:25:39.616 NotebookApp] 302 GET /notebooks/Hypothesis_Testing.jpg (127.0.0.1) 1.46ms
+[I 19:25:39.620 NotebookApp] 302 GET /notebooks/student_t_pdf.png (127.0.0.1) 1.34ms
+[I 19:25:39.624 NotebookApp] 302 GET /notebooks/stat_83.png (127.0.0.1) 1.40ms
+[W 19:25:39.905 NotebookApp] 404 GET /static/components/MathJax/jax/element/mml/optable/Latin1Supplement.js?rev=2.6.0 (127.0.0.1) 36.17ms referer=http://localhost:8888/notebooks/p.ipynb
+[I 19:26:04.345 NotebookApp] Saving file at /p.ipynb
+[I 19:28:45.960 NotebookApp] Saving file at /p.ipynb
+[I 19:29:24.728 NotebookApp] Saving file at /p.ipynb
+[I 19:29:39.618 NotebookApp] Saving file at /p.ipynb
+[I 19:30:58.376 NotebookApp] Saving file at /p.ipynb
+[I 19:31:39.615 NotebookApp] Saving file at /p.ipynb
+[I 19:31:48.419 NotebookApp] Saving file at /p.ipynb
+[I 19:33:39.608 NotebookApp] Saving file at /p.ipynb
+[I 19:35:39.620 NotebookApp] Saving file at /p.ipynb
+[I 19:37:39.613 NotebookApp] Saving file at /p.ipynb
+[I 19:39:39.620 NotebookApp] Saving file at /p.ipynb
+[I 19:41:39.612 NotebookApp] Saving file at /p.ipynb
+[I 19:43:39.980 NotebookApp] Saving file at /p.ipynb
+[I 19:49:06.602 NotebookApp] Saving file at /p.ipynb
+[I 19:49:39.621 NotebookApp] Saving file at /p.ipynb
+[I 19:51:39.623 NotebookApp] Saving file at /p.ipynb
+[I 19:52:34.038 NotebookApp] Saving file at /p.ipynb
+[I 19:53:39.620 NotebookApp] Saving file at /p.ipynb
+[I 19:55:39.976 NotebookApp] Saving file at /p.ipynb
+[I 19:59:39.611 NotebookApp] Saving file at /p.ipynb
+[I 20:01:39.804 NotebookApp] Saving file at /p.ipynb
+[I 20:03:39.639 NotebookApp] Saving file at /p.ipynb
+[I 20:05:39.621 NotebookApp] Saving file at /p.ipynb
+[I 20:07:39.641 NotebookApp] Saving file at /p.ipynb
+[I 20:09:39.603 NotebookApp] Saving file at /p.ipynb
+[I 20:11:23.315 NotebookApp] Saving file at /p.ipynb
+[I 20:11:39.614 NotebookApp] Saving file at /p.ipynb
+[I 20:13:39.620 NotebookApp] Saving file at /p.ipynb
+[I 20:14:00.866 NotebookApp] Saving file at /p.ipynb
+[I 20:14:07.126 NotebookApp] Saving file at /p.ipynb
+[I 20:15:39.623 NotebookApp] Saving file at /p.ipynb
+[I 20:15:40.266 NotebookApp] Saving file at /p.ipynb
+[I 20:17:11.082 NotebookApp] Saving file at /p.ipynb
+[I 20:17:39.621 NotebookApp] Saving file at /p.ipynb
+[I 20:19:39.612 NotebookApp] Saving file at /p.ipynb
+[I 20:19:41.951 NotebookApp] Saving file at /p.ipynb
+[I 20:19:45.801 NotebookApp] Saving file at /p.ipynb
+[I 20:20:43.376 NotebookApp] Saving file at /p.ipynb
+[I 20:21:36.970 NotebookApp] Saving file at /p.ipynb
+[I 20:22:39.926 NotebookApp] Saving file at /p.ipynb
+[I 20:22:58.725 NotebookApp] Saving file at /p.ipynb
+[I 20:23:09.324 NotebookApp] Saving file at /p.ipynb
+[I 20:23:30.674 NotebookApp] Saving file at /p.ipynb
+[I 20:23:39.611 NotebookApp] Saving file at /p.ipynb
+[I 20:23:54.159 NotebookApp] Saving file at /p.ipynb
+[I 20:26:52.293 NotebookApp] Saving file at /p.ipynb
+[I 20:27:02.479 NotebookApp] Saving file at /p.ipynb
+[I 20:51:16.560 NotebookApp] Saving file at /p.ipynb
